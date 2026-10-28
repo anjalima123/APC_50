@@ -1,8 +1,7 @@
-def factorial(n):
-    fact = 1
-    for i in range(1, n + 1):
-        fact *= i
-    return fact
-
-n = int(input("Enter number: "))
-print(factorial(n))
+f = open("student.txt", "w")
+f.write("Name: Anjali Mattikalli\n")
+f.write("Roll No: 50\n")
+f.write("Branch: Computer Science and Engineering\n")
+f.write("Semester: 5\n")
+f.close()
+print("Student details written successfully.")

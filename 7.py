@@ -1,7 +1,5 @@
-def total(n):
-    s = 0
-    for i in range(1, n + 1):
-        s += i
-    return s
-
-print(total(5))
+f = open("student.txt", "r")
+data = f.read()
+words = data.split()
+print("Total number of words:", len(words))
+f.close()

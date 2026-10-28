@@ -1,4 +1,12 @@
-def reverse(s):
-    return s[::-1]
+f = open("student.txt", "r")
+text = f.read()
+f.close()
 
-print(reverse("hello"))
+words = text.split()
+
+if words:
+    longest = max(words, key=len)
+    print("Longest word:", longest)
+    print("Length:", len(longest))
+else:
+    print("File is empty.")

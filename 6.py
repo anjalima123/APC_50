@@ -1,5 +1,4 @@
-def area(r):
-    return 3.14 * r * r
-
-r = float(input("Enter radius: "))
-print(area(r))
+f = open("student.txt", "r")
+lines = f.readlines()
+print("Total number of lines:", len(lines))
+f.close()

@@ -1,4 +1,5 @@
-def power(base, exponent):
-    return base ** exponent
-
-print(power(2, 3))
+f = open("student.txt", "r")
+lines = f.readlines()
+for line in reversed(lines):
+    print(line.strip())
+f.close()

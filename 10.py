@@ -1,8 +1,21 @@
-def count_vowels(s):
-    count = 0
-    for ch in s.lower():
-        if ch in "aeiou":
-            count += 1
-    return count
+f = open("student.txt", "r")
+data = f.read()
+alphabets = 0
+digits = 0
+spaces = 0
+special = 0
+for ch in data:
+    if ch.isalpha():
+        alphabets += 1
+    elif ch.isdigit():
+        digits += 1
+    elif ch.isspace():
+        spaces += 1
+    else:
+        special += 1
+nprint("Alphabets:", alphabets)
+print("Digits:", digits)
+print("Spaces:", spaces)
+print("Special characters:", special)
 
-print(count_vowels("hello"))
+f.close()
