@@ -1,5 +1,13 @@
-students = ["Amit", "Rahul", "Priya", "Neha", "Ravi"]
-students.pop(0)
-students.pop()
-students.remove("Priya")
-print("Remaining students:", students)
+s = input("Enter a string: ")
+
+upper = 0
+lower = 0
+
+for ch in s:
+    if ch.isupper():
+        upper += 1
+    elif ch.islower():
+        lower += 1
+
+print("Uppercase =", upper)
+print("Lowercase =", lower)

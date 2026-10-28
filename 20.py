@@ -1,10 +1,12 @@
-books = ["Python", "Java", "C++"]
-books.append("HTML")
-book = input("Search book: ")
-if book in books:
-    print("Book found.")
-else:
-    print("Book not found.")
-books.remove("Java")
-print("All books:", books)
-print("Total books:", len(books))
+s = input("Enter a sentence: ")
+word = input("Enter word to search: ")
+
+words = s.split()
+
+count = 0
+
+for w in words:
+    if w == word:
+        count += 1
+
+print("Occurrences =", count)

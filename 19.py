@@ -1,10 +1,7 @@
-students = ["Amit", "Priya", "Rahul", "Neha"]
-print("Total students:", len(students))
-name = input("Search student: ")
-if name in students:
-    print(name, "is present.")
+s = input("Enter main string: ")
+sub = input("Enter substring: ")
+
+if sub in s:
+    print("Substring found")
 else:
-    print(name, "is absent.")
-students.append("Ravi")
-students.remove("Neha")
-print("Updated list:", students)
+    print("Substring not found")

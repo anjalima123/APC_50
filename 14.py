@@ -1,6 +1,9 @@
-numbers = [10, 20, 10, 30, 20, 40, 30]
-unique = []
-for n in numbers:
-    if n not in unique:
-        unique.append(n)
-print("Unique elements:", unique)
+s = input("Enter a sentence: ")
+
+words = s.split()
+result = ""
+
+for word in words:
+    result += word[0].upper() + word[1:] + " "
+
+print("Title Case:", result)

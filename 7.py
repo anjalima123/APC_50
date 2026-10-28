@@ -1,11 +1,9 @@
-numbers = []
+s = input("Enter a string: ")
 
-for i in range(10):
-    n = int(input("Enter number: "))
-    numbers.append(n)
+result = ""
 
-total = sum(numbers)
-average = total / 10
+for ch in s:
+    if ch != " ":
+        result += ch
 
-print("Sum:", total)
-print("Average:", average)
+print("String without spaces:", result)

@@ -1,10 +1,13 @@
-numbers = [25, 10, 45, 5, 30]
-largest = numbers[0]
-smallest = numbers[0]
-for n in numbers:
-    if n > largest:
-        largest = n
-    if n < smallest:
-        smallest = n
-print("Largest:", largest)
-print("Smallest:", smallest)
+s = input("Enter a string: ")
+old = input("Enter character to replace: ")
+new = input("Enter new character: ")
+
+result = ""
+
+for ch in s:
+    if ch == old:
+        result += new
+    else:
+        result += ch
+
+print("New string:", result)

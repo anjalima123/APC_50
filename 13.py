@@ -1,5 +1,7 @@
-numbers = [40, 10, 50, 20, 30, 90, 60, 80, 70, 100]
-numbers.sort()
-print("Ascending:", numbers)
-numbers.sort(reverse=True)
-print("Descending:", numbers)
+s = input("Enter a sentence: ")
+words = s.split()
+shortest = words[rt0]
+for word in words:
+    if len(word) < len(shortest):
+        shortest = word
+print("Shortest word:", shortest)

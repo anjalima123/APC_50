@@ -1,5 +1,14 @@
-numbers = [1, 2, 3, 4, 5]
-left = numbers[1:] + numbers[:1]
-right = numbers[-1:] + numbers[:-1]
-print("Left rotation:", left)
-print("Right rotation:", right)
+s = input("Enter a string: ")
+
+max_count = 0
+most = ""
+
+for ch in s:
+    count = s.count(ch)
+
+    if count > max_count:
+        max_count = count
+        most = ch
+
+print("Most frequent character:", most)
+print("Frequency:", max_count)

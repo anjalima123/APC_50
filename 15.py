@@ -1,3 +1,8 @@
-numbers = [10, 40, 20, 50, 30]
-numbers.sort()
-print("Second largest:", numbers[-2])
+s = input("Enter a string: ")
+for ch in s:
+    count = 0
+    for x in s:
+        if ch == x:
+            count += 1
+    if count > 1:
+        print(ch)

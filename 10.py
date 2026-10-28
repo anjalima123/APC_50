@@ -1,5 +1,4 @@
-numbers = [10, 20, 30, 40, 50]
-reversed_list = []
-for i in range(len(numbers) - 1, -1, -1):
-    reversed_list.append(numbers[i])
-sprint("Reverse list:", reversed_list)
+s = input("Enter a string: ")
+
+for ch in s:
+    print(ch, "=", ord(ch))

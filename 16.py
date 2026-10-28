@@ -1,10 +1,14 @@
-students = [
-    ["Amit", 1, 85],
-    ["Priya", 2, 90],
-    ["Rahul", 3, 78]
-]
-for student in students:
-    print("Name:", student[0])
-    print("Roll Number:", student[1])
-    print("Marks:", student[2])
-    print()
+s = input("Enter a string: ")
+
+checked = ""
+
+for ch in s:
+    if ch not in checked:
+        count = 0
+
+        for x in s:
+            if ch == x:
+                count += 1
+
+        print(ch, "=", count)
+        checked += ch
