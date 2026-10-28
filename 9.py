@@ -1,4 +1,2 @@
-s = input("Enter a string: ")
-
-print("First character:", s[0])
-print("Last character:", s[-1])
+a = [1, 2, 3, 4, 5, 6]
+print(list(filter(lambda x: x % 2 == 0, a)))

@@ -1,13 +1,2 @@
-s = input("Enter a string: ")
-old = input("Enter character to replace: ")
-new = input("Enter new character: ")
-
-result = ""
-
-for ch in s:
-    if ch == old:
-        result += new
-    else:
-        result += ch
-
-print("New string:", result)
+a = [1, 2, 3, 4]
+print(list(map(lambda x: x * x, a)))

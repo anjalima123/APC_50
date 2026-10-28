@@ -1,12 +1,5 @@
-s = input("Enter a sentence: ")
-word = input("Enter word to search: ")
+words = ["apple", "banana", "cat", "orange"]
 
-words = s.split()
-
-count = 0
-
-for w in words:
-    if w == word:
-        count += 1
-
-print("Occurrences =", count)
+print(list(map(lambda x: len(x), words)))
+print(list(filter(lambda x: len(x) > 5, words)))
+print(sorted(words, key=lambda x: len(x)))

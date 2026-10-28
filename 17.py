@@ -1,7 +1,6 @@
-s1 = input("Enter first string: ")
-s2 = input("Enter second string: ")
+students = [("Amit", 80), ("Riya", 90), ("Raj", 60)]
 
-if sorted(s1) == sorted(s2):
-    print("Strings are Anagrams")
-else:
-    print("Strings are not Anagrams")
+marks = list(map(lambda x: x[1], students))
+print(sum(marks) / len(marks))
+print(list(filter(lambda x: x[1] > 75, students)))
+print(sorted(students, key=lambda x: x[1]))

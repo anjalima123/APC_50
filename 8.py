@@ -1,10 +1,3 @@
-s = input("Enter a string: ")
-ch = input("Enter character: ")
-
-count = 0
-
-for i in s:
-    if i == ch:
-        count += 1
-
-print("Frequency =", count)
+a = [1, 2, 3]
+b = [4, 5, 6]
+print(list(map(lambda x, y: x + y, a, b)))

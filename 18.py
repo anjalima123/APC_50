@@ -1,9 +1,5 @@
-s = input("Enter a string: ")
+employees = [("Amit", "IT", 60000), ("Riya", "HR", 40000)]
 
-result = ""
-
-for ch in s:
-    if ch not in result:
-        result += ch
-
-print("After removing duplicates:", result)
+print(list(filter(lambda x: x[2] > 50000, employees)))
+print(list(map(lambda x: (x[0], x[1], x[2] * 1.1), employees)))
+print(sorted(employees, key=lambda x: x[2]))

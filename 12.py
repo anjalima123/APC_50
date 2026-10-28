@@ -1,11 +1,2 @@
-s = input("Enter a sentence: ")
-
-words = s.split()
-
-longest = words[0]
-
-for word in words:
-    if len(word) > len(longest):
-        longest = word
-
-print("Longest word:", longest)
+a = [20, 60, 40, 80, 30]
+print(list(filter(lambda x: x > 50, a)))

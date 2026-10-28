@@ -1,13 +1,2 @@
-s = input("Enter a string: ")
-
-upper = 0
-lower = 0
-
-for ch in s:
-    if ch.isupper():
-        upper += 1
-    elif ch.islower():
-        lower += 1
-
-print("Uppercase =", upper)
-print("Lowercase =", lower)
+si = lambda p, r, t: p * r * t / 100
+print(si(1000, 5, 2))

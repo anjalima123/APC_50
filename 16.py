@@ -1,14 +1,2 @@
-s = input("Enter a string: ")
-
-checked = ""
-
-for ch in s:
-    if ch not in checked:
-        count = 0
-
-        for x in s:
-            if ch == x:
-                count += 1
-
-        print(ch, "=", count)
-        checked += ch
+employees = [("Amit", 30000), ("Riya", 50000), ("Raj", 40000)]
+print(sorted(employees, key=lambda x: x[1]))
