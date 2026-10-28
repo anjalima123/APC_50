@@ -1,17 +1,17 @@
-gender = input("Enter gender (male/female): ").lower()
-marital = input("Enter marital status (married/unmarried): ").lower()
-age = int(input("Enter age: "))
+n = int(input("Enter a number: "))
 
-if marital == "married":
-    print("Driver is insured.")
-elif marital == "unmarried":
-    if gender == "male" and age > 30:
-        print("Driver is insured.")
-    elif gender == "female" and age > 25:
-        print("Driver is insured.")
-    else:
-        print("Driver is not insured.")
+i = 2
+prime = True
+
+while i < n:
+    if n % i == 0:
+        prime = False
+        break
+    i = i + 1
+
+if n <= 1:
+    print("Not Prime")
+elif prime:
+    print("Prime")
 else:
-    print("Invalid marital status.")
-print()
-input("Press Enter to exit...")
+    print("Not Prime")

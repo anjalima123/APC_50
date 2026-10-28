@@ -1,11 +1,10 @@
-a=int(input("enter number"))
-b=int(input("enter number"))
-c=int(input("enter number"))
-if a>b :
- print("a is greater")
-if b>c:
- print(" b is greater")
-else:
- print("c is greater")
-print()
-input("Press Enter to exit...")
+n = int(input("Enter n: "))
+
+i = 2
+sum = 0
+
+while i <= n:
+    sum = sum + i
+    i = i + 2
+
+print("Sum of even numbers =", sum)

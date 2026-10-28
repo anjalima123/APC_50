@@ -1,7 +1,9 @@
-year=int(input("enter year"))
-if year%4==0:
- print("leap year")
-else:
- print("not leap year")
-print()
-input("Press Enter to exit...")
+n = int(input("Enter a number: "))
+
+fact = 1
+
+while n > 0:
+    fact = fact * n
+    n = n - 1
+
+print("Factorial =", fact)

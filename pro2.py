@@ -1,8 +1,6 @@
-a=int(input("enter number"))
-b=int(input("enter number"))
-if a>b:
- print("a is greater than b")
-else:
- print("b is greater than a")
-print()
-input("Press Enter to exit...")
+n = int(input("Enter n: "))
+
+i = 2
+while i <= n:
+    print(i)
+    i = i + 2

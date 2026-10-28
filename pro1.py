@@ -1,7 +1,6 @@
-num=int(input("enter number"))
-if num==0:
-  print("zero")
-else:
-  print("Non zero")
-print()
-input("Press Enter to exit...")
+n = int(input("Enter n: "))
+
+i = 1
+while i <= n:
+    print(i)
+    i = i + 1

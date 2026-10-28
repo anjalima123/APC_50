@@ -1,8 +1,10 @@
-ch = input("Enter a character: ")
+n = int(input("Enter n: "))
 
-if ch in "aeiouAEIOU":
-    print("Vowel")
-else:
-    print("Consonant")
-print()
-input("Press Enter to exit...")
+i = 1
+sum = 0
+
+while i <= n:
+    sum = sum + i
+    i = i + 1
+
+print("Sum =", sum)
