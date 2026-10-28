@@ -1,2 +1,4 @@
-big = lambda a, b: a if a > b else b
-print(big(10, 20))
+def simple_interest(p, r, t):
+    return (p * r * t) / 100
+
+print(simple_interest(1000, 5, 2))

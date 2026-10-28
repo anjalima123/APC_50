@@ -1,2 +1,5 @@
-a = [1, 2, 3, 4]
-print(list(map(lambda x: x * x, a)))
+def area(r):
+    return 3.14 * r * r
+
+r = float(input("Enter radius: "))
+print(area(r))

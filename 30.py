@@ -1,7 +1,6 @@
-s1 = input("Enter first string: ")
-s2 = input("Enter second string: ")
+def binary(n):
+    if n > 1:
+        binary(n // 2)
+    print(n % 2, end="")
 
-if len(s1) == len(s2) and s2 in (s1 + s1):
-    print("String is a rotation")
-else:
-    print("String is not a rotation")
+binary(10)

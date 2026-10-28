@@ -1,14 +1,23 @@
-s = input("Enter a string: ")
+balance = 1000
+history = []
 
-max_count = 0
-most = ""
+def deposit(amount):
+    global balance
+    balance += amount
+    history.append("Deposited")
 
-for ch in s:
-    count = s.count(ch)
+def withdraw(amount):
+    global balance
+    if amount <= balance:
+        balance -= amount
+        history.append("Withdrawn")
+    else:
+        print("Insufficient balance")
 
-    if count > max_count:
-        max_count = count
-        most = ch
+def enquiry():
+    print("Balance:", balance)
 
-print("Most frequent character:", most)
-print("Frequency:", max_count)
+deposit(500)
+withdraw(200)
+enquiry()
+print(history)

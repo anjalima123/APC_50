@@ -1,18 +1,6 @@
-password = input("Enter password: ")
+def bill(price, quantity):
+    total = price * quantity
+    discount = total * 0.10
+    return total - discount
 
-upper = lower = digit = special = False
-
-for ch in password:
-    if ch.isupper():
-        upper = True
-    elif ch.islower():
-        lower = True
-    elif ch.isdigit():
-        digit = True
-    else:
-        special = True
-
-if len(password) >= 8 and upper and lower and digit and special:
-    print("Valid Password")
-else:
-    print("Invalid Password")
+print(bill(100, 5))

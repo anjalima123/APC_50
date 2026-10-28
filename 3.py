@@ -1,2 +1,7 @@
-even = lambda x: x % 2 == 0
-print(even(4))
+def greater(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+print(greater(10, 20))

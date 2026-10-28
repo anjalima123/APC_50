@@ -1,2 +1,8 @@
-a = [1, 2, 3, 4, 5, 6]
-print(list(filter(lambda x: x % 2 == 0, a)))
+def largest(a):
+    big = a[0]
+    for i in a:
+        if i > big:
+            big = i
+    return big
+
+print(largest([10, 25, 5, 40, 15]))

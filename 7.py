@@ -1,2 +1,7 @@
-a = [1, 2, 3, 4]
-print(list(map(lambda x: x ** 3, a)))
+def total(n):
+    s = 0
+    for i in range(1, n + 1):
+        s += i
+    return s
+
+print(total(5))

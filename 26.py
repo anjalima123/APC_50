@@ -1,12 +1,6 @@
-text = input("Enter message: ")
-shift = int(input("Enter shift value: "))
+def bill(units):
+    amount = units * 5
+    tax = amount * 0.05
+    return amount + tax
 
-result = ""
-
-for ch in text:
-    if ch.isalpha():
-        result += chr(ord(ch) + shift)
-    else:
-        result += ch
-
-print("Encrypted message:", result)
+print(bill(100))

@@ -1,10 +1,15 @@
-s = input("Enter a sentence: ")
+def search(a, x, low, high):
+    if low > high:
+        return -1
 
-words = s.split()
+    mid = (low + high) // 2
 
-result = ""
+    if a[mid] == x:
+        return mid
+    elif x < a[mid]:
+        return search(a, x, low, mid - 1)
+    else:
+        return search(a, x, mid + 1, high)
 
-for i in range(len(words) - 1, -1, -1):
-    result += words[i] + " "
-
-print("Reversed sentence:", result)
+a = [10, 20, 30, 40, 50]
+print(search(a, 30, 0, len(a) - 1))
